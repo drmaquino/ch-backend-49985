@@ -1,0 +1,99 @@
+javascript
+
+tipado
+
+todo dato tiene un tipo:
+
+primitivos:
+
+simples
+10      -> number
+'hola'  -> string
+true    -> boolean
+
+compuestos
+{ a: 1 } -> Object
+[ 1, 2 ] -> Array
+
+(los que no son primitivos se crean como clases!)
+
+tipado fuerte vs debil
+----------------------
+
+suma: op1 + op2
+number + number
+
+funcion sumar ( number, number ) -> number
+
+concatenacion: op1 + op2
+string + string
+
+funcion concatenar ( string, string ) -> string
+
+AND: op1 && op2
+boolean && boolean
+
+funcion and (boolean, boolean) -> boolean
+
+3 + 3 -> es una suma
+'3' + '3' -> es una concatenacion
+
+3 + 'hola'
+
+tipado fuerte (ejemplo python):
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+tipado debil (ejemplo js):
+'3hola'
+
+
+cuando uso como boolean un:
+
+number: 0 -> false | el resto de los numeros -> true
+string: '' -> false | el resto de los strings (no vacios) -> true
+Object: true
+Array: true
+
+undefined -> false
+null -> false
+
+----------------------------------
+
+tipado estatico vs dinamico
+
+estatico:
+la variable tiene un tipo de dato fijo.
+solo puede guardar datos de ese tipo.
+
+int edad;
+edad = 40;
+
+edad = 'hola'
+// Error!
+
+tipado dinamico:
+la variable se adapta al tipo del dato que almacena.
+
+let edad;
+
+edad = 40
+typeof edad == 'number'
+
+edad = 'veinte'
+typeof edad == 'string'
+
+// ejemplo comun
+usuario ingresa [ 5 ]
+let edad = document.querySelector('#inputEdad').value;
+// edad vale '5'
+// edad es de tipo string
+edad = edad + 1;
+document.querySelector('#divEdad').innerHTML = edad;
+// muestra '51'
+
+solucion: 
+let edad = parseInt(document.querySelector('#inputEdad').value);
+
+----------------------------------------------
+
+JavaScript tiene tipado dinamico y debil!
