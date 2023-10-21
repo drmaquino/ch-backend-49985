@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <button id="boton">Click</button> -->
+  <div id="div1"></div>
+  <div id="div2"></div>
+  <script>
+    function randInt() {
+      return Math.random() * 2000
+    }
+
+    // document.querySelector('#boton').addEventListener('click', () => {
+    setTimeout(() => {
+      // alert('pri')
+      document.querySelector('#div1').innerHTML = '<h1>Titulo</h1>'
+    }, randInt())
+    // })
+
+    // document.querySelector('#boton').addEventListener('click', () => {
+    setTimeout(() => {
+      // alert('seg')
+      document.querySelector('#div2').innerHTML = '<p>Contenido</p>'
+    }, randInt())
+    // })
+  </script>
+</body>
+
+</html>
