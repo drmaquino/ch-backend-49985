@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "name": "generador-de-mails",
+  "version": "1.0.0",
+  "description": "",
+  "main": "redactarMail.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC"
+}

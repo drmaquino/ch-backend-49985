@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "ejemplo-lib-externa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}
