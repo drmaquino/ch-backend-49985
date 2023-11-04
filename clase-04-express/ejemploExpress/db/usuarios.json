@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "marian",
+    "roles": [
+      "profe",
+      "tutor"
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "oriana",
+    "roles": [
+      "estudiante"
+    ]
+  },
+  {
+    "id": 3,
+    "nombre": "luigi",
+    "roles": [
+      "estudiante"
+    ]
+  },
+  {
+    "id": 4,
+    "nombre": "gabriela",
+    "roles": [
+      "estudiante"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "edgar",
+    "roles": [
+      "estudiante"
+    ]
+  },
+  {
+    "id": "e031ac81-0b63-4ee6-a3d2-3a0318243e82",
+    "nombre": "mariano",
+    "roles": [
+      "estudiante"
+    ]
+  },
+  {
+    "id": "8255e35a-d1b5-4717-a680-dde69de7447f",
+    "nombre": "mariano",
+    "roles": [
+      "estudiante"
+    ]
+  },
+  {
+    "id": "621b38c1-4340-4ea3-8269-67a5e47f8120",
+    "nombre": "mariano",
+    "roles": [
+      "estudiante"
+    ]
+  },
+  {
+    "id": "11b303ef-d07c-4d73-a8b3-6bc64088c4cb",
+    "nombre": "mariano",
+    "roles": [
+      "estudiante"
+    ]
+  },
+  {
+    "id": "0f1a4785-18a4-4242-b393-addb817be05b",
+    "nombre": "sergio",
+    "roles": [
+      "estudiante",
+      "tutor"
+    ]
+  }
+]

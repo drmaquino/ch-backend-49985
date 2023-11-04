@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+</head>
+
+<body>
+  <h1>Personas</h1>
+  <h2>Registro</h2>
+  <form>
+    <input type="text" name="nombre" placeholder="Nombre" id="inputRegistroNombre">
+    <select name="rol" id="selectRegistroRol">
+      <option value="estudiante">Estudiante</option>
+      <option value="profe">Profe</option>
+      <option value="tutor">Tutor</option>
+    </select>
+    <input type="submit" value="Registrar">
+  </form>
+
+  <h2>Actualizar</h2>
+  <form>
+    <input type="text" name="id" placeholder="Id" id="inputActualizarId">
+    <input type="text" name="nombre" placeholder="Nombre" id="inputActualizarNombre">
+    <select name="rol" id="selectActualizarRol">
+      <option value="estudiante">Estudiante</option>
+      <option value="profe">Profe</option>
+      <option value="tutor">Tutor</option>
+    </select>
+    <input type="submit" value="Actualizar">
+  </form>
+
+  <script>
+    document.querySelectorAll('form')[0].addEventListener('submit', e => {
+      e.preventDefault()
+      fetch('/personas', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            nombre: document.querySelector('#inputRegistroNombre').value,
+            rol: document.querySelector('#selectRegistroRol').value
+          })
+        }).then(res => {
+          if (res.status === 200) {
+            return res.json()
+          } else {
+            throw new Error('error en el registro')
+          }
+        })
+        .then(persona => {
+          alert('registro exitoso!')
+          console.log(persona)
+        }).catch(error => {
+          alert('hubo un error en el registro. intente nuevamente')
+        })
+    })
+
+    document.querySelectorAll('form')[1].addEventListener('submit', e => {
+      e.preventDefault()
+      const id = document.querySelector('#inputActualizarId').value
+      fetch(`/personas/${id}`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            nombre: document.querySelector('#inputActualizarNombre').value,
+            rol: document.querySelector('#selectActualizarRol').value
+          })
+        }).then(res => {
+          if (res.status === 200) {
+            return res.json()
+          } else {
+            throw new Error('error en el registro')
+          }
+        })
+        .then(persona => {
+          alert('actualizacion exitosa!')
+          console.log(persona)
+        }).catch(error => {
+          alert('hubo un error en la actualizacion. intente nuevamente')
+        })
+    })
+  </script>
+</body>
+
+</html>

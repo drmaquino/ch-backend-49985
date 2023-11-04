@@ -1,0 +1,12 @@
+{ "type": "module",
+  "name": "clase-04-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": { "start": "node .",
+    "dev": "nodemon -e 'js' ." },
+  "keywords": [ ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": { },
+  "devDependencies": { "@types/node": "^20.8.10" } }
