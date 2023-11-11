@@ -1,0 +1,11 @@
+<h1>Personas</h1>
+{{#if hayPersonas}}
+<ul>
+  {{#each personas}}
+  <li>{{this.nombre}} ({{this.edad}})</li>
+  {{/each}}
+</ul>
+{{else}}
+<p>Aún no hay personas para mostrar</p>
+{{/if}}
+<img src="/static/imgs/charizard.jpg" alt="pic of charizard, just because.">
