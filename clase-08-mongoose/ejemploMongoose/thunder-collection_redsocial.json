@@ -1,0 +1,144 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "redsocial",
+    "dateExported": "2023-12-02T19:16:47.457Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "dbc3fc25-32d0-412a-a851-52070305318f",
+            "colId": "130492bc-da82-4a9e-b541-409c6d9e7a4f",
+            "containerId": "",
+            "name": "buscar todos los usuarios",
+            "url": "localhost:8080/api/usuarios",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-12-02T17:55:31.981Z",
+            "modified": "2023-12-02T17:55:31.981Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3ccc9dc7-c31c-4231-9eee-17584b3b6ea6",
+            "colId": "130492bc-da82-4a9e-b541-409c6d9e7a4f",
+            "containerId": "",
+            "name": "registrar usuario sin foto",
+            "url": "localhost:8080/api/usuarios",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2023-12-02T17:56:26.429Z",
+            "modified": "2023-12-02T17:58:59.373Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"alias\":\"marian\",\n  \"email\":\"marian@mail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3fb4f672-8f85-4ee5-9063-bb944895d2ef",
+            "colId": "130492bc-da82-4a9e-b541-409c6d9e7a4f",
+            "containerId": "",
+            "name": "registrar usuario con foto",
+            "url": "localhost:8080/api/usuarios",
+            "method": "POST",
+            "sortNum": 17500,
+            "created": "2023-12-02T18:10:29.963Z",
+            "modified": "2023-12-02T18:16:28.428Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "alias",
+                        "value": "gaby"
+                    },
+                    {
+                        "name": "email",
+                        "value": "gaby@mail.com"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "/home/drmaquino/Pictures/carbie.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0776726f-2a83-4c81-82da-fa6ef7899cde",
+            "colId": "130492bc-da82-4a9e-b541-409c6d9e7a4f",
+            "containerId": "",
+            "name": "actualizar usuario",
+            "url": "localhost:8080/api/usuarios/c9e8e4e7-6d1f-4245-8ce1-44c57575211a/actualizaciones",
+            "method": "POST",
+            "sortNum": 18750,
+            "created": "2023-12-02T18:51:57.059Z",
+            "modified": "2023-12-02T18:53:41.124Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "alias",
+                        "value": "marian2023"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "foto",
+                        "value": "/home/drmaquino/Pictures/aliadin.jpeg"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "5632d703-0fa5-4753-82ae-37efdf630421",
+            "colId": "130492bc-da82-4a9e-b541-409c6d9e7a4f",
+            "containerId": "",
+            "name": "buscar usuario por id",
+            "url": "localhost:8080/api/usuarios/7ce12ab6-7e64-4407-aca4-be732187b367",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-02T17:55:41.730Z",
+            "modified": "2023-12-02T17:55:41.730Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "67cd0437-8b73-4992-8d31-5e77e2ae9aa3",
+            "colId": "130492bc-da82-4a9e-b541-409c6d9e7a4f",
+            "containerId": "",
+            "name": "agregar publicacion",
+            "url": "localhost:8080/api/usuarios/c9e8e4e7-6d1f-4245-8ce1-44c57575211a/publicaciones",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-12-02T19:11:12.263Z",
+            "modified": "2023-12-02T19:12:34.171Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "contenido",
+                        "value": "feliz fin de semana"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
