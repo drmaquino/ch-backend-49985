@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+nav ul {
+  flex-direction: row;
+}
+
+.fotoPequenia img {
+  height: 100px;
+  width: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  gap: 0.3em;
+}

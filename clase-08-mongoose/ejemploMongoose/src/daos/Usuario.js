@@ -15,10 +15,21 @@ const usuarioSchema = new Schema({
     agregarPublicacion: async function (idPublicacion) {
       if (!this.publicaciones.includes(idPublicacion)) {
         this.publicaciones.push(idPublicacion)
+        await this.save()
+        return true
       }
-      await this.save()
+      return false
+    },
+    eliminarPublicacion: async function (idPublicacion) {
+      const index = this.publicaciones.indexOf(idPublicacion)
+      if (index !== -1) {
+        this.publicaciones.slice(index, 1)
+        await this.save()
+        return true
+      }
+      return false
     }
   }
 })
 
-export const manager = model('usuarios', usuarioSchema)
+export const usuariosManager = model('usuarios', usuarioSchema)

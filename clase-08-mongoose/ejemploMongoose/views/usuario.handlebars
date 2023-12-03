@@ -1,0 +1,31 @@
+<h3>{{alias}}</h3>
+<div class="fotoPequenia">
+  <a href="{{fotoUrl}}">
+    <img src="{{fotoUrl}}" alt="" srcset="">
+  </a>
+</div>
+<ul>
+  <li>email: {{email}}</li>
+</ul>
+<p><a href="/actualizacion?id={{idUsuario}}">Actualizar datos...?</a></p>
+<p><a href="#" onclick="eliminarUsuario()">eliminar usuario</a></p>
+
+<h3>Publicar</h3>
+<form enctype="multipart/form-data">
+  <input type="text" name="titulo" id="" placeholder="Titulo" required>
+  <textarea name="contenido" id="" placeholder="Qué quieres contar?" required></textarea>
+  <input type="file" name="foto" id="">
+  <button type="submit">Publicar</button>
+</form>
+<h3>Publicaciones</h3>
+{{#if tienePublicaciones}}
+<ul>
+  {{#each publicaciones}}
+  <li><a href="/publicaciones?id={{this._id}}">{{this.titulo}}</a></li>
+  {{/each}}
+</ul>
+{{else}}
+Aún no hay publicaciones...
+{{/if}}
+
+<script src="/static/js/usuario.js"></script>

@@ -1,0 +1,10 @@
+<h3>Publicaciones</h3>
+{{#if hayPublicaciones}}
+<ul>
+  {{#each publicaciones}}
+  <li><a href="/publicaciones?id={{this._id}}">{{this.titulo}}</a></li>
+  {{/each}}
+</ul>
+{{else}}
+No hay nada publicado...
+{{/if}}

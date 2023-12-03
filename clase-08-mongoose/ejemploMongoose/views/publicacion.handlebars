@@ -1,0 +1,13 @@
+<h3>{{titulo}}</h3>
+<p>{{contenido}}</p>
+{{#if tieneFoto}}
+<div class="fotoPequenia">
+  <a href="{{fotoUrl}}">
+    <img src="{{fotoUrl}}" alt="" srcset="">
+  </a>
+</div>
+{{/if}}
+<small>{{fecha}}</small>
+<p><a href="#" onclick="eliminarPublicacion('{{idAutor}}','{{idPublicacion}}')">eliminar publicación</a></p>
+<p><a href="/usuarios?id={{idAutor}}">ver más del autor...</a></p>
+<script src="/static/js/publicacion.js"></script>

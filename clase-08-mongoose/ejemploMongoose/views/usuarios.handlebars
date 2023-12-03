@@ -1,0 +1,10 @@
+<h3>Usuarios</h3>
+{{#if hayUsuarios}}
+<ul>
+  {{#each usuarios}}
+  <li><a href="/usuarios?id={{this._id}}">{{this.alias}}</a></li>
+  {{/each}}
+</ul>
+{{else}}
+No hay usuarios para mostrar...
+{{/if}}
