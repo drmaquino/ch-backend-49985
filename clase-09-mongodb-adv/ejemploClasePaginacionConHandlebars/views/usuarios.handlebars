@@ -1,0 +1,20 @@
+{{#if hayDocs}}
+<ul>
+  {{#each docs}}
+  <li>nombre: {{this.first_name}}</li>
+  {{/each}}
+</ul>
+{{else}}
+nada para mostrar...<br>
+{{/if}}
+
+<a {{#if hasPrevPage}} href="/?limit={{limit}}&page={{prevPage}}" {{/if}}>Prev</a>
+[{{ page }}]
+<a {{#if hasNextPage}} href="/?limit={{limit}}&page={{nextPage}}" {{/if}}>Next</a><br>
+Página: <input type="text"> <button onclick="irAPag({{limit}})">ir</button>
+<script>
+  function irAPag(limit) {
+    const pagDeseada = document.querySelector('input').value || 1
+    window.location = `/?limit=${limit}&page=${pagDeseada}`
+  }
+</script>

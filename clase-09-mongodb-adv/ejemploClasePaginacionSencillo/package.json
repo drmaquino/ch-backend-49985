@@ -1,0 +1,18 @@
+{
+  "name": "clase17mongoavanzadoii",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "nodemon ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "mongoose-paginate-v2": "^1.7.4"
+  }
+}
