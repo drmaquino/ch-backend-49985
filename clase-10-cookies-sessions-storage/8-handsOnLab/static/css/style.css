@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 1em;
+}
