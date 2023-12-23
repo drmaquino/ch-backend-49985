@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "3-handsonlab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon -e js,handlebars ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^5.1.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "mongoose": "^8.0.3",
+    "session": "^0.1.0"
+  }
+}
