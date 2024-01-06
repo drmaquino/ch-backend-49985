@@ -1,0 +1,18 @@
+{
+  "type": "module",
+  "name": "ejemplo-params",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon -e js ."
+  },
+  "keywords": [],
+  "author": "drmaquino",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "latest",
+    "mongoose": "^8.0.3"
+  }
+}

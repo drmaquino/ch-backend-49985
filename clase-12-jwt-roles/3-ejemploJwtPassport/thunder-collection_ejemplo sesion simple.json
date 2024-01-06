@@ -1,0 +1,108 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ejemplo sesion simple",
+    "dateExported": "2023-12-08T02:29:17.117Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "d6d6b860-36bd-4258-a03b-9bd6c531aab4",
+            "colId": "f8edb361-f033-4d57-a71f-a65a93d10e71",
+            "containerId": "",
+            "name": "login admin",
+            "url": "localhost:8080/api/sesiones",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-12-07T23:51:36.218Z",
+            "modified": "2023-12-08T02:25:14.076Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"adminCoder@coder.com\",\n  \"password\":\"adminCod3r123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5edac13d-e3ff-480c-991f-50d8b3a65e5a",
+            "colId": "f8edb361-f033-4d57-a71f-a65a93d10e71",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:8080/api/sesiones",
+            "method": "POST",
+            "sortNum": 12500,
+            "created": "2023-12-08T00:20:41.892Z",
+            "modified": "2023-12-08T02:28:25.777Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"marian2@mail.com\",\n  \"password\":\"123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7f3d6c8d-074a-4a12-aa8a-fafbf6ed3d3d",
+            "colId": "f8edb361-f033-4d57-a71f-a65a93d10e71",
+            "containerId": "",
+            "name": "logout",
+            "url": "localhost:8080/api/sesiones/current",
+            "method": "DELETE",
+            "sortNum": 15000,
+            "created": "2023-12-07T23:56:44.511Z",
+            "modified": "2023-12-08T02:25:41.780Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "fa66d172-131e-47e6-8932-e78a6f203790",
+            "colId": "f8edb361-f033-4d57-a71f-a65a93d10e71",
+            "containerId": "",
+            "name": "ver sesion",
+            "url": "localhost:8080/api/sesiones/current",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-12-07T23:55:23.441Z",
+            "modified": "2023-12-07T23:56:02.150Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2b5f72e5-e32a-46a0-8cd3-3d44b6a8263d",
+            "colId": "f8edb361-f033-4d57-a71f-a65a93d10e71",
+            "containerId": "",
+            "name": "ver mi perfil",
+            "url": "localhost:8080/api/usuarios/current",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-12-08T00:05:33.530Z",
+            "modified": "2023-12-08T02:25:56.603Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5a4d3a30-3a8c-4b9f-ac4a-39e298014b5a",
+            "colId": "f8edb361-f033-4d57-a71f-a65a93d10e71",
+            "containerId": "",
+            "name": "registrar usuario",
+            "url": "localhost:8080/api/usuarios",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-12-08T00:18:40.479Z",
+            "modified": "2023-12-08T02:28:15.776Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"email\": \"marian2@mail.com\",\n  \"password\": \"123\",\n  \"nombre\": \"mariano\",\n  \"apellido\": \"aquino\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
