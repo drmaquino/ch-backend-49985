@@ -18,14 +18,14 @@ usersRouter.post('/',
   },
   tokenizeUserInCookie,
   (req, res) => {
-    res.json(req.user)
+    res.jsonOk(req.user)
   }
 )
 
 usersRouter.get('/current',
   passport.authenticate('jwt', { failWithError: true, session: false }),
   async (req, res, next) => {
-    res.json(req.user)
+    res.jsonOk(req.user)
   }
 )
 
@@ -35,7 +35,7 @@ usersRouter.get('/',
   async (req, res, next) => {
     try {
       const users = await User.find().lean()
-      res.json(users)
+      res.jsonOk(users)
     } catch (error) {
       next(error)
     }

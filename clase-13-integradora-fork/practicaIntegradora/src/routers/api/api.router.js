@@ -7,6 +7,17 @@ export const apiRouter = Router()
 apiRouter.use(json())
 apiRouter.use(urlencoded({ extended: true }))
 
+// respuestas homogeneas
+apiRouter.use((req, res, next) => {
+  res['jsonOk'] = (payload) => {
+    res.json({ status: 'success', payload })
+  }
+  res['jsonError'] = (error) => {
+    res.json({ status: 'error', message: error.message, error })
+  }
+  next()
+})
+
 apiRouter.use('/users', usersRouter)
 apiRouter.use('/sessions', sessionsRouter)
 

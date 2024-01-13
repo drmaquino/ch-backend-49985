@@ -13,7 +13,7 @@ console.log(deleted)
 const user = await User.registrar({
   username: 'admin',
   password: 'admin',
-  nombreCompleto: 'admin',
+  fullName: 'admin',
   email: 'admin@admin.com'
 })
 
