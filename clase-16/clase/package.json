@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "name": "clase-14-arq-capas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon --env-file='.env' -e js,html,css ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0",
+    "nodemailer": "^6.9.9",
+    "twilio": "^4.21.0"
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "_id": "efdf53fd-66ef-4454-ab9d-26cc95091652",
+    "nombre": "ironman",
+    "precio": "10000"
+  },
+  {
+    "_id": "b1ed7dad-b40e-4060-a988-bcbc7cb5ec0b",
+    "nombre": "capitan america",
+    "precio": "15000"
+  },
+  {
+    "_id": "604efbd3-8724-4127-a698-f32ad76b5011",
+    "nombre": "superman",
+    "precio": "2"
+  }
+]
