@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "yarn",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "license": "MIT",
+  "dependencies": {
+    "demo-49985": "^0.0.1",
+    "express": "^4.18.2"
+  }
+}

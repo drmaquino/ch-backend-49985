@@ -1,0 +1,16 @@
+{
+  "type": "module",
+  "name": "demo-49985",
+  "version": "0.0.1",
+  "description": "",
+  "main": "siglas.service.js",
+  "scripts": {
+    "test": "node siglas.service.test.js"
+  },
+  "keywords": [
+    "sigla",
+    "acronym"
+  ],
+  "author": "drmaquino",
+  "license": "ISC"
+}
