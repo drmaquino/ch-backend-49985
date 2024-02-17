@@ -1,0 +1,25 @@
+{
+  "name": "testeoperformanceavanzado",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "artillery run config.yml --output testPerformance.json",
+    "report": "artillery report testPerformance.json -o testResults.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcrypt": "^5.1.1",
+    "mongoose": "^8.1.1",
+    "artillery-plugin-metrics-by-endpoint": "^1.2.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.0",
+    "artillery": "^2.0.4"
+  }
+}

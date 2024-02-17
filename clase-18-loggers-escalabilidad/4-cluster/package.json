@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "name": "cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "start:cluster": "node cluster.js",
+    "load:sencilla": "artillery quick -c 40 -n 50 'http://localhost:8080/operacionsencilla' -o operacionsencilla.json",
+    "load:compleja": "artillery quick -c 40 -n 50 'http://localhost:8080/operacioncompleja' -o operacioncompleja.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

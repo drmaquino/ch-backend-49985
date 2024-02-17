@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "artillery",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "load:sencilla": "artillery quick -c 40 -n 50 'http://localhost:8080/operacionsencilla' -o operacionsencilla.json",
+    "load:compleja": "artillery quick -c 40 -n 50 'http://localhost:8080/operacioncompleja' -o operacioncompleja.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "artillery": "^1.7.9"
+  }
+}
