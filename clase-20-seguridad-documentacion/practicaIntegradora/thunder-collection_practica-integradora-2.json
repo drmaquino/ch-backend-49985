@@ -1,0 +1,143 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "practica-integradora-2",
+    "dateExported": "2024-01-13T19:55:59.024Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "07f3a199-7788-41a0-bf56-f152de775ddf",
+            "colId": "fdfe2f2a-7253-4089-8f86-4a900845004c",
+            "containerId": "",
+            "name": "registro",
+            "url": "localhost:8080/api/users",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-01-13T15:19:20.712Z",
+            "modified": "2024-01-13T19:55:27.085Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "marian"
+                    },
+                    {
+                        "name": "password",
+                        "value": "marian"
+                    },
+                    {
+                        "name": "fullName",
+                        "value": "profe marian"
+                    },
+                    {
+                        "name": "email",
+                        "value": "profe@marian.com"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "663987c5-aee5-4cbc-8ac4-da3639f724f2",
+            "colId": "fdfe2f2a-7253-4089-8f86-4a900845004c",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:8080/api/sessions",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-13T16:07:16.244Z",
+            "modified": "2024-01-13T16:07:48.937Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "marian"
+                    },
+                    {
+                        "name": "password",
+                        "value": "marian"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7bc24eb8-15ca-4af3-a097-5833abe30551",
+            "colId": "fdfe2f2a-7253-4089-8f86-4a900845004c",
+            "containerId": "",
+            "name": "ver usuario logueado",
+            "url": "localhost:8080/api/users/current",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-13T16:29:07.059Z",
+            "modified": "2024-01-13T16:29:23.083Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "84e87178-2f6d-4381-9f5e-c9933701187f",
+            "colId": "fdfe2f2a-7253-4089-8f86-4a900845004c",
+            "containerId": "",
+            "name": "login admin",
+            "url": "localhost:8080/api/sessions",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-01-13T17:14:28.347Z",
+            "modified": "2024-01-13T17:14:45.403Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "admin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "admin"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c94d78c3-3012-47b9-89dd-7d3c7a56ea07",
+            "colId": "fdfe2f2a-7253-4089-8f86-4a900845004c",
+            "containerId": "",
+            "name": "ver usuarios (solo admin)",
+            "url": "localhost:8080/api/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-01-13T16:54:10.126Z",
+            "modified": "2024-01-13T16:54:28.691Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3532fe3b-e7ba-40a1-baef-b3a701a46710",
+            "colId": "fdfe2f2a-7253-4089-8f86-4a900845004c",
+            "containerId": "",
+            "name": "logout",
+            "url": "localhost:8080/api/sessions/current",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-01-13T17:14:01.529Z",
+            "modified": "2024-01-13T17:14:20.486Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
