@@ -1,0 +1,11 @@
+paths:
+  /api/sessions:
+    post:
+      summary: crea una sesion
+      tags:
+      - Sessions
+  /api/sessions/current:
+    delete:
+      summary: borra la sesion actual del usuario logueado
+      tags:
+      - Sessions

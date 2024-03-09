@@ -1,0 +1,6 @@
+paths:
+  /api/users/current:
+    get:
+      summary: devuelve el usuario logueado
+      tags:
+      - Users
