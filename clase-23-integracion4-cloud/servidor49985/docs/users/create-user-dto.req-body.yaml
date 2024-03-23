@@ -1,0 +1,30 @@
+components:
+  requestBodies:
+    CreateUserDto:
+      type: object
+      properties:
+        username:
+          type: String
+          description: el username del usuario.
+          required: true
+        password:
+          type: String
+          description: el password del usuario.
+          required: true
+        fullName:
+          type: String
+          description: el fullName del usuario.
+          required: true
+        email:
+          type: String
+          description: el email del usuario.
+          required: true
+        foto:
+          type: String
+          description: el foto del usuario.
+      example:
+        username: 'marian'
+        password: '123'
+        fullName: 'profe marian'
+        email: 'marian@profe.com'
+        foto: './fotos/s9d8f7g9s8d798gfsd.png'

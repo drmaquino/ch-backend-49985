@@ -1,0 +1,22 @@
+components:
+  requestBodies:
+    UpdateUserDto:
+      type: object
+      properties:
+        username:
+          type: String
+          description: el username del usuario.
+        fullName:
+          type: String
+          description: el fullName del usuario.
+        email:
+          type: String
+          description: el email del usuario.
+        foto:
+          type: String
+          description: el foto del usuario.
+      example:
+        username: 'marian'
+        fullName: 'profe marian'
+        email: 'marian@profe.com'
+        foto: './fotos/s9d8f7g9s8d798gfsd.png'

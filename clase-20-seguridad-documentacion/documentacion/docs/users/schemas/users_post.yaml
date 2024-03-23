@@ -1,0 +1,30 @@
+components:
+  requestBodies:
+    DatosCrearUsuario:
+      type: object
+      properties:
+        username:
+          type: string
+          description: El nombre de usuario
+        password:
+          type: string
+          description: La contraseña del usuario.
+        email:
+          type: string
+          description: El email del usuario.
+        displayName:
+          type: string
+          description: El nombre para mostrar del usuario.
+        rol:
+          type: string
+          description: el rol del usuario.
+      required:
+        - username
+        - password
+        - email
+        - displayName
+      example:
+        username: jperez
+        password: abc123
+        email: jperez@mail.com
+        displayName: juanpi

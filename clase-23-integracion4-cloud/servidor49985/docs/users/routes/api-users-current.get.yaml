@@ -1,0 +1,21 @@
+paths:
+  /api/users/current:
+    get:
+      tags:
+      - Users
+      summary: devuelve el usuario logueado
+      parameters:
+      - name: token
+        in: cookies
+        required: true
+        type: string
+        description: el token que identifica la sesion del usuario  
+      responses:
+        "200":
+          description: el usuario actualmente logueado.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        "401":
+          description: el pedido proviene de un usuario no autenticado.

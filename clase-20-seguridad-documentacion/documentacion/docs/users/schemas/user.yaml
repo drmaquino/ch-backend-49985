@@ -1,0 +1,37 @@
+components:
+  schemas:
+    Usuario:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: El id del usuario
+        username:
+          type: string
+          description: El nombre de usuario
+        password:
+          type: string
+          description: La contraseña del usuario.
+        email:
+          type: string
+          description: El email del usuario.
+        displayName:
+          type: string
+          description: El nombre para mostrar del usuario.
+        rol:
+          type: string
+          description: el rol del usuario.
+      required:
+        - _id
+        - username
+        - password
+        - email
+        - displayName
+        - rol
+      example:
+        _id: gs87dfg69s876g897s6f9g8s79f6
+        username: jperez
+        password: abc123
+        email: jperez@mail.com
+        displayName: juanpi
+        rol: user

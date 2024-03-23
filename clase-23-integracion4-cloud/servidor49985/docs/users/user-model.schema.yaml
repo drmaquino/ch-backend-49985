@@ -1,0 +1,34 @@
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        _id:
+          type: String
+          description: el _id del usuario.
+        username:
+          type: String
+          description: el username del usuario.
+        password:
+          type: String
+          description: el password del usuario.
+        fullName:
+          type: String
+          description: el fullName del usuario.
+        email:
+          type: String
+          description: el email del usuario.
+        foto:
+          type: String
+          description: el foto del usuario.
+        rol:
+          type: String
+          description: el rol del usuario.
+      example:
+        _id: 'fa9s8d7f9a8sd7f09a8sd7f0a890d0af5'
+        username: 'marian'
+        password: '123'
+        fullName: 'profe marian'
+        email: 'marian@profe.com'
+        foto: './fotos/s9d8f7g9s8d798gfsd.png'
+        rol: 'user'
