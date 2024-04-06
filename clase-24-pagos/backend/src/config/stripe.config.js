@@ -1,0 +1,1 @@
+export const STRIPE_KEY = 'sk_test_.......'
